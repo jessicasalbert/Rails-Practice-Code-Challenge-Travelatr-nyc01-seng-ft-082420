@@ -1,15 +1,65 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+* {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+body {
+  background-color: blanchedalmond;
+  margin: 0;
+}
+
+div{
+  margin: 2.5% 10%;
+  padding: 5%;
+  background-color: rgb(205, 255, 255);
+  background-color: #ffffff;
+}
+
+h1 {
+  letter-spacing: 5px;
+  color:rgb(205, 205, 255);
+  text-transform: uppercase;
+  padding-top: 7vh;
+}
+
+a {
+  color: #444444;
+  transition: .5s;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(113, 255, 255);
+}
+
+
+input[type=submit] {
+  transition: .5s;
+  border: none;
+  background-color: rgb(255, 205, 187);
+
+  /* border-radius: 10%; */
+  padding: 1% 5%;
+  letter-spacing: 5px;
+  text-indent: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+input:hover {
+  padding: 2% 6%;
+  background-color: coral;
+}
+
+footer {
+  font-size: 8px;
+  letter-spacing: 3px;
+  width: 100vw;
+  height: 10vh;
+  background-color: rgb(205, 255, 255);
+}
+footer p {
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 2.5%;
+
+}

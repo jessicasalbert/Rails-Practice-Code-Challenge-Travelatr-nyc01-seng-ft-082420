@@ -5,11 +5,12 @@
 <h2>Posts about us:</h2>
 <% @destination.newest_five.each do |n| %>
 
-<h4> <%= link_to n.title , post_path(n) %> </h4>
-
+<%= link_to n.title , post_path(n) %>
+<br>
+<br>
 <% end %>
 </div>
-<br>
+
 <div>
 <h2> Featured Post: </h2>
 <%= link_to @destination.most_likes[0].title, post_path(@destination.most_likes[0]) %>
