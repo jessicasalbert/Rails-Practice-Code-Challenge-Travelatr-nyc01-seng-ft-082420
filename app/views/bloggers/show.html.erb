@@ -1,10 +1,12 @@
 <h1> <%= @blogger.name %> </h1>
 
-<h3> <%= @blogger.total_likes %> total likes</h3>
-
-<h3> Featured post: <h3>
+<div>
+<p> <%= @blogger.total_likes %> total likes</p>
+<h3> Featured posts: <h3>
 <ul>
 <% @blogger.most_likes.each do |post| %>
     <li><%= link_to post.title, post_path(post) %></li>
+    <br>
 <% end %>
 </ul>
+</div>

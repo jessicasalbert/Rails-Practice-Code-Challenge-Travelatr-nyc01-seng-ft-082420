@@ -1,6 +1,10 @@
 class BloggersController < ApplicationController
     before_action :find_blogger, only: [:show]
 
+    def index
+        @bloggers = Blogger.all
+    end
+
     def show
     end
 
