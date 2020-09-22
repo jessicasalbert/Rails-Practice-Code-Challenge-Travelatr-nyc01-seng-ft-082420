@@ -10,3 +10,10 @@
 <% end %>
 </ul>
 </div>
+
+<div>
+<h5>Other posts</h5>
+    <% @blogger.posts.each do |p|%>
+      <h6>  <%= link_to p.title, post_path(p)%>  </h6>
+    <% end %>
+</div>
